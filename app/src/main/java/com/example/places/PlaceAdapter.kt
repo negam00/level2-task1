@@ -15,15 +15,14 @@ class PlaceAdapter(val places: List<Place>): RecyclerView.Adapter<PlaceAdapter.V
         }
 
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_place, parent, false)
         )
     }
 
-    override fun getItemCount(): Int {
-        return places.size
-    }
+    override fun getItemCount() =  places.size
 
     override fun onBindViewHolder(holder: PlaceAdapter.ViewHolder, position: Int) {
         holder.bind(places[position])

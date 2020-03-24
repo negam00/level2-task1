@@ -19,8 +19,9 @@
         android:id="@+id/placeImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toBottomOf="@id/placeName"
+        app:layout_constraintStart_toStartOf="@id/placeName"
+        app:layout_constraintEnd_toEndOf="@id/placeName"
         tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
